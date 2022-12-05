@@ -1,1 +1,11 @@
-<p>componente1 works!</p>
+
+<body style="text-align: center ;">
+    <h1>Ingrese un numero</h1>
+    <input [(ngModel)]="numero">
+    <br>
+
+    <strong *ngIf="numero > 3">El numero es mayor a 3</strong>
+    <p *ngIf="numero == 3">El numero es 3</p>
+    <strong *ngIf="numero < 3 || numero!= '' ">{{ numero }}, el numero es menor que 3</strong>
+    
+</body>
