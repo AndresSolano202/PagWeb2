@@ -1,5 +1,5 @@
 
-<body style="text-align: center ;">
+<body>
     <h1>Ingrese un numero</h1>
     <input [(ngModel)]="numero">
     <br>
@@ -7,5 +7,13 @@
     <strong *ngIf="numero > 3">El numero es mayor a 3</strong>
     <p *ngIf="numero == 3">El numero es 3</p>
     <strong *ngIf="numero < 3 || numero!= '' ">{{ numero }}, el numero es menor que 3</strong>
+
+    <p ></p>
+    <ul *ngFor="let sueldo of sueldos">
+        <li>{{sueldo}}</li>
+    </ul>
+    <div *ngFor="let sueldo of sueldos">
+        <div>Sueldo: {{sueldo}}</div>
+    </div>
     
 </body>
