@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-componente1',
   templateUrl: './componente1.component.html',
@@ -7,12 +7,36 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Componente1Component implements OnInit{
 
-  constructor(){}
-  numero: any=0;
+  constructor(private router: Router){}
+  nombre: any;
+  correo: any;
+  contra: any;
+  numero: any;
+  confirmar:any;
 
-  sueldos= [1700, 1600, 1900, 1880, 2000, 4555];
+ 
   ngOnInit():void{
-    this.numero
+    this.contra;
+    this.correo;
+    this.nombre;
+    this.numero;
+    this.confirmar;
+    //localStorage.clear()
+    
   }
+
+
+
+  register()
+  {
+    this.router.navigate(['web2'])
+    localStorage.setItem('nombre', this.nombre);
+    localStorage.setItem('correo', this.correo);
+    localStorage.setItem('contra', this.contra);
+    localStorage.setItem('confirmar', this.confirmar);
+    localStorage.setItem('numero', this.numero);
+  }
+
+  
 
 }
