@@ -1,22 +1,24 @@
-<body style="background-color: rgb(176, 241, 241); text-align: center;margin-left: 40%; margin-right: 40%;">
-    <h1>Create new account</h1>
-    <input placeholder="FULL NAME" [(ngModel)]="nombre" >
-    <br>
-    <br>
-    <input placeholder="EMAIL" [(ngModel)]="correo" >
-    <br>
-    <br>
-    <input type="password" placeholder="PASSWORD" [(ngModel)]="contra" >
-    <br>
-    <br>
-    <input type="password" placeholder="CONFIRM PASSWORD" [(ngModel)]="confirmar" >
-    <br>
-    <br>
-    <input placeholder="PHONE NUMBER" [(ngModel)]="numero">
-    <br>
-    <br>
-
-    
+<body style="background-color: rgb(250, 153, 250); text-align: center;margin-left: 40%; margin-right: 40%;">
+    <h1>CREATED NEW ACCOUNT</h1>
+    <div style="background-color: aquamarine; margin-left: 10%; margin-right: 10%;">
+        
+        <br>
+        <input placeholder="FULL NAME" [(ngModel)]="nombre" >
+        <br>
+        <br>
+        <input placeholder="EMAIL" [(ngModel)]="correo" >
+        <br>
+        <br>
+        <input type="password" placeholder="PASSWORD" [(ngModel)]="contra" >
+        <br>
+        <br>
+        <input type="password" placeholder="CONFIRM PASSWORD" [(ngModel)]="confirmar" >
+        <br>
+        <br>
+        <input placeholder="PHONE NUMBER" [(ngModel)]="numero">
+        <br>
+        <br>
+    </div>
     <br>
     <br>
     <button (click)="register()">REGISTER</button>
