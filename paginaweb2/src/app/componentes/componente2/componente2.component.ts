@@ -1,5 +1,6 @@
 import { parseHostBindings } from '@angular/compiler';
 import { Component, OnInit } from '@angular/core';
+import { Route, Router } from '@angular/router';
 
 @Component({
   selector: 'app-componente2',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./componente2.component.css']
 })
 export class Componente2Component implements OnInit {
-  constructor(){}
+  constructor(private router: Router){}
   nombre: any;
   correo: any;
   contra: any;
@@ -25,6 +26,11 @@ export class Componente2Component implements OnInit {
     this.contra = localStorage.getItem('contra');
     this.confirmar = localStorage.getItem('confirmar');
     this.numero = localStorage.getItem('numero');
+  }
+
+  volver()
+  {
+    this.router.navigate([''])
   }
 
 }
